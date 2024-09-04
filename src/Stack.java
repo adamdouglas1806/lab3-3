@@ -50,6 +50,8 @@ public class Stack implements StackADT {
 	 *
 	 * O(?)
 	 * 
+	 * Because: TODO
+	 * 
 	 * @param o the integer to add to the top of the stack
 	 */
 	public void push(int o){
@@ -62,6 +64,8 @@ public class Stack implements StackADT {
 	 * TODO Where N is the number of elements in the stack the complexity is:
 	 *
 	 * O(?)
+	 * 
+	 * Because: TODO
 	 *
 	 * @return the integer that was at the top of the stack
 	 * @throws StackException if the stack is empty
@@ -76,6 +80,8 @@ public class Stack implements StackADT {
 	 * TODO Where N is the number of elements in the stack the complexity is:
 	 *
 	 * O(?)
+	 * 
+	 * Because: TODO
 	 * 
 	 * @return the integer at the top of the stack
 	 * @throws StackException is the stack is empty

@@ -109,6 +109,8 @@ public class LinkedList {
 	 *
 	 * O(?)
 	 * 
+	 * Because: TODO
+	 * 
 	 * @return the number of nodes in the linked list
 	 */
 	public int size(){
@@ -121,6 +123,8 @@ public class LinkedList {
 	 * TODO Where N is the length of linked list the complexity is:
 	 *
 	 * O(?)
+	 * 
+	 * Because: TODO
 	 * 
 	 * @return the sum of all nodes in the linked list
 	 */
