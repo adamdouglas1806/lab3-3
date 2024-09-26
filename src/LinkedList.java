@@ -81,7 +81,6 @@ public class LinkedList {
 
 	/*
 	 * removes and returns the value at the head of the list
-	 * note, this may return -1 if the list is empty
 	 */ 
 	public int removeAtHead() throws LinkedListException {
 		if (headNode == null) {
