@@ -51,6 +51,16 @@ public class LinkedListTest {
 		fail("not implemented yet");
 	}
 	
+	@Test(expected=LinkedListException.class)
+	public void testRemoveAtHeadEmpty() {
+		l.removeAtHead();
+	}
+	
+	@Test(expected=LinkedListException.class)
+	public void testRemoveAtTailEmpty() {
+		l.removeAtTail();
+	}
+	
 	/*
 	 * Optional part
 	 */

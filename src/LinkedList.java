@@ -1,3 +1,10 @@
+class LinkedListException extends RuntimeException{    
+	public LinkedListException(String err) {
+		super(err);
+	}
+}
+
+
 public class LinkedList {
 
 	private class Node {
@@ -76,9 +83,9 @@ public class LinkedList {
 	 * removes and returns the value at the head of the list
 	 * note, this may return -1 if the list is empty
 	 */ 
-	public int removeAtHead() {
+	public int removeAtHead() throws LinkedListException {
 		if (headNode == null) {
-			return -1; // return -1 if the list is empty
+			throw new LinkedListException("Cannot remove from the head of an empty linked list");
 		} else {
 			Node returnedNode = headNode;
 			headNode = headNode.getNextNode();
@@ -89,9 +96,9 @@ public class LinkedList {
 	/*
 	 * See https://web.microsoftstream.com/video/5a15e714-bf98-4bf6-9124-573638723795
 	 */
-	public int removeAtTail() {
+	public int removeAtTail() throws LinkedListException {
 		if (headNode == null) {
-			return -1;
+			throw new LinkedListException("Cannot remove from the tail of an empty linked list");
 		} else {
 			Node returnedNode = new Node(-1);
 			headNode = headNode.removeAtTail(returnedNode);
