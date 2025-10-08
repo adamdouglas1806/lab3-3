@@ -111,16 +111,41 @@ public class LinkedList {
 
 	/** The number of nodes in the linked list, and 0 for an empty linked list.
 	 * 
-	 * TODO Where N is the length of linked list the complexity is:
+	 *  Where N is the length of linked list the complexity is:
 	 *
-	 * O(?)
+	 * O(N)
 	 * 
-	 * Because: TODO
+	 * Because: The while loop will iterate for the number of nodes in the linked list. If there are a lot of nodes in the linked list then it will
+	 * take more steps to complete and thus it will take longer to compile (in other words the more inputs the longer it will take to run). 
 	 * 
 	 * @return the number of nodes in the linked list
 	 */
 	public int size(){
-		return -1; // dummy value to remove
+		
+		if (headNode == null) {
+			//If the headNode is null then there are no nodes in the linked list.
+			return 0;
+		}
+		//This if statement is a base case to ensure the linked list is not empty. If the linked list is empty it will return o;
+		
+		int numberOfNodes = 0;
+		//Creating a new variable which will store a count of the number of nodes in the linked list.
+		Node currentNode = headNode;
+		//Creating a new variable with the same address as the headNode.
+		
+		while (currentNode != null) {
+			numberOfNodes++;
+			//The line above will add 1 to the variable numberOfNodes every time the while loop iterates, this will track the number of nodes in the linked list.
+			currentNode = currentNode.getNextNode();
+			//currentNode will be set to the next node in the linked list.
+		}
+		/*
+		 * The while loop will continue to loop until the currentNode variable is pointing towards null. It will cycle through each node and add 1
+		 * every time it iterates (which shows how many nodes are in the list.
+		 */
+		
+		return numberOfNodes;
+		//This will return the number of nodes in the linked list.
 	}
 	
 	
@@ -128,14 +153,36 @@ public class LinkedList {
 	 *
 	 * TODO Where N is the length of linked list the complexity is:
 	 *
-	 * O(?)
+	 * O(N)
 	 * 
-	 * Because: TODO
+	 * Similarly to before in the method size(); Depending on the number of nodes in the linked list it will affect the time the code takes to compile and
+	 * calculate the sum. MEaning if there is a larger number of nodes/a larger input then it will take a longer amount of time to calculate.
 	 * 
 	 * @return the sum of all nodes in the linked list
 	 */
 	public int total(){ 
-		return -1; // dummy value to remove
+		
+		if (headNode == null) {
+			//If the headNode is null then there are no nodes in the linked list.
+			return 0;
+		}
+		//Similar to the if statement in the size() method, this is a base case which checks if the linked list is empty and if so it will return 0.
+		
+		int sumOfNodes = 0;
+		//Creating a new variable which will store the sum of every integer node in the linked list.
+		Node currentNode = headNode;
+		//Similar to the currentNode in the method size(), a new variable with the same address as the headNode.
+		
+		while (currentNode != null) {
+			sumOfNodes = sumOfNodes + currentNode.getValue();
+			//sumOfNodes variable is set to the value of itself and the current value in the next integer node of the linked list.
+			currentNode = currentNode.getNextNode();
+			//Similar to before in the size() method, currentNode will be set to the next node in the linked list.
+		}
+		
+		return sumOfNodes;
+		//This will return the sum of all integer nodes in the linked list.
+		
 	}
 
 	/*

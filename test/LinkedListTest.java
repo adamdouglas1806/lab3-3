@@ -32,7 +32,7 @@ public class LinkedListTest {
 		l.addAtHead(3);
 		//l.addAtHead will add the integer 3 to the head of the linked list l.
 		
-		assertEquals("The sum of the integer nodes in the linked list", 3, l.size());
+		assertEquals("The number of nodes in the linked list", 3, l.size());
 		//The assertEquals will check if the number of nodes in the linked list is equal to 3.
 	}
 	
@@ -46,10 +46,10 @@ public class LinkedListTest {
 		l.addAtHead(3);
 		//l.addAtHead will add the integer 3 to the head of the linked list l.
 		
-		assertEquals("The sum of the integer nodes in the linked list", 3, l.size());
+		assertEquals("The number of nodes in the linked list", 3, l.size());
 		//The assertEquals will check if the number of nodes in the linked list is equal to 3.
 		
-		assertEquals("The sum of the integer nodes in the linked list", 3, l.size());
+		assertEquals("The number of nodes in the linked list", 3, l.size());
 		//The assertEquals should still check if the number of nodes in the linked list is equal to 3.
 	}
 
@@ -70,7 +70,7 @@ public class LinkedListTest {
 		l.addAtHead(3);
 		//l.addAtHead will add the integer 3 to the head of the linked list l.
 		
-		assertEquals("The sum of the integer nodes in the linked list", 6, l.size());
+		assertEquals("The sum of the integer nodes in the linked list", 6, l.total());
 		//The assertEquals will check the sum of all the integers in the linked list is equal to 6.
 	}
 	
@@ -85,10 +85,10 @@ public class LinkedListTest {
 		l.addAtHead(3);
 		//l.addAtHead will add the integer 3 to the head of the linked list l.
 		
-		assertEquals("The sum of the integer nodes in the linked list", 6, l.size());
+		assertEquals("The sum of the integer nodes in the linked list", 6, l.total());
 		//The assertEquals will check the sum of all the integers in the linked list is equal to 6.
 		
-		assertEquals("The sum of the integer nodes in the linked list", 6, l.size());
+		assertEquals("The sum of the integer nodes in the linked list", 6, l.total());
 		//The assertEquals should again check the sum of all the integers in the linked list is equal to 6.
 	}
 	
