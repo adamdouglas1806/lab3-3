@@ -43,15 +43,14 @@ public class LinkedListTest {
 		//l.addAtHead will add the integer 1 to the head of the linked list l.
 		l.addAtHead(2);
 		//l.addAtHead will add the integer 2 to the head of the linked list l.
-		
-		assertEquals("The sum of the integer nodes in the linked list", 2, l.size());
-		//The assertEquals will check if the number of nodes in the linked list is equal to 2.
-		
 		l.addAtHead(3);
 		//l.addAtHead will add the integer 3 to the head of the linked list l.
 		
 		assertEquals("The sum of the integer nodes in the linked list", 3, l.size());
 		//The assertEquals will check if the number of nodes in the linked list is equal to 3.
+		
+		assertEquals("The sum of the integer nodes in the linked list", 3, l.size());
+		//The assertEquals should still check if the number of nodes in the linked list is equal to 3.
 	}
 
 	@Test
@@ -83,14 +82,14 @@ public class LinkedListTest {
 		l.addAtHead(2);
 		//l.addAtHead will add the integer 2 to the head of the linked list l.
 		
-		assertEquals("The sum of the integer nodes in the linked list", 3, l.size());
-		//The assertEquals will check the sum of all the integers in the linked list is equal to 3.
-		
 		l.addAtHead(3);
 		//l.addAtHead will add the integer 3 to the head of the linked list l.
 		
 		assertEquals("The sum of the integer nodes in the linked list", 6, l.size());
 		//The assertEquals will check the sum of all the integers in the linked list is equal to 6.
+		
+		assertEquals("The sum of the integer nodes in the linked list", 6, l.size());
+		//The assertEquals should again check the sum of all the integers in the linked list is equal to 6.
 	}
 	
 	@Test(expected=LinkedListException.class)
