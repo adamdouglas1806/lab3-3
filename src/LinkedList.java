@@ -151,12 +151,12 @@ public class LinkedList {
 	
 	/** The sum of all integer nodes in the linked list, and 0 for an empty linked list.
 	 *
-	 * TODO Where N is the length of linked list the complexity is:
+	 * Where N is the length of linked list the complexity is:
 	 *
 	 * O(N)
 	 * 
 	 * Similarly to before in the method size(); Depending on the number of nodes in the linked list it will affect the time the code takes to compile and
-	 * calculate the sum. MEaning if there is a larger number of nodes/a larger input then it will take a longer amount of time to calculate.
+	 * calculate the sum. Meaning if there is a larger number of nodes/a larger input then it will take a longer amount of time to calculate.
 	 * 
 	 * @return the sum of all nodes in the linked list
 	 */
